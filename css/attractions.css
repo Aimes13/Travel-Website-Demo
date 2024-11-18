@@ -318,16 +318,6 @@ h1 {
     }
 }
 
-@media screen and (max-width: 440px) {
-    .attraction-container {
-        height: 39.5rem;
-    }
-
-    #vic-falls.active, #devils-pool.active, #zambezi.active, #vic-falls-bridge.active {
-        padding: 20% 5%;
-    } 
-}
-
 @media screen and (max-width: 415px) {
     .attraction-container {
         height: 39rem;
