@@ -87,6 +87,30 @@ h1 {
 
 /* RESPONSIVENESS */
 
+/* Drogon PC */
+@media screen and (max-width: 1940px) {
+    .attraction-container {
+        height: 35rem;
+    }
+
+    .picture {
+        transform: translate(-360%, 180%);
+    }
+
+    .main-img {
+        height: 23rem;
+    }
+
+    .text-box {
+        width: 40rem;
+        margin: 0 10%;
+    }
+
+    #vic-falls.active, #devils-pool.active, #zambezi.active, #vic-falls-bridge.active {
+        padding-left: 5%;
+    }
+}
+
 /* Standard Desktop */ 
 @media screen and (max-width: 1440px) {
     .attraction-container {
@@ -102,21 +126,66 @@ h1 {
     }
 }
 
-/* Standard Laptop */ 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1370px) {
     .attraction-container {
-        height: 31rem;
+        height: 38rem;
     }
 
     .attraction-container::before {
         top: 4.7rem;
-    }   
+    }
+
+    .main-img {
+        height: 25rem;
+    }
+
+    .picture {
+        transform: translate(-270%, 240%);
+    }
+
+    .text-box {
+        width: 30rem;
+        margin: 0 5%;
+    }
+}
+
+/* Standard Laptop */ 
+@media screen and (max-width: 1280px) {
+    .attraction-container {
+        height: 36rem;
+    }
+    
+    .picture {
+        transform: translate(-230%, 240%);
+    }
+
+    .text-box {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .attraction-container {
+        height: 28rem;
+    }
+
+    .attraction-container::before {
+        top: 4.6rem;
+    }
+    
+    .picture {
+        transform: translate(-230%, 140%);
+    }
+
+    .main-img {
+        height: 18rem;
+    }
 }
 
 /* Standard Tablet */ 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 912px) {
     .attraction-container {
-        height: 22rem;
+        height: 23rem;
     }
 
     .attraction-container::before {
@@ -132,8 +201,8 @@ h1 {
     }
 
     .text-box {
-        width: 17rem;
-        margin: 0 2%;
+        width: 23rem;
+        margin: 0 3%;
         padding-top: 10%;
     }
     
@@ -143,12 +212,42 @@ h1 {
     }
 
     .picture {
-        transform: translate(-160%, 90%);
+        transform: translate(-210%, 130%);
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .text-box {
+        width: 20rem;
+        margin: 0 2%;
+    }
+
+    .picture {
+        transform: translate(-190%, 110%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .attraction-container {
+        height: 20rem;
+    }
+
+    .text-box {
+        width: 20rem;
+        margin: 0 2%;
+    }
+
+    .picture {
+        transform: translate(-190%, 80%);
+    }
+
+    .main-img {
+        height: 13rem;
     }
 }
 
 /* Standard Mobile */ 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
     .attraction-container h1 {
         font-size: 1.5rem;
         margin-bottom: 17%;
@@ -156,11 +255,11 @@ h1 {
 
     .picture {
         height: 2.5rem;
-        transform: translate(-270%, -130%);
+        transform: translate(-300%, -130%);
     }
 
     .attraction-container {
-        height: 25rem;
+        height: 29rem;
     }
     
     .attraction-container::before {
@@ -171,12 +270,12 @@ h1 {
     #vic-falls.active, #devils-pool.active, #zambezi.active, #vic-falls-bridge.active {
         flex-direction: column;
         align-items: center;
-        padding: 4% 13%;
+        padding: 4% 12%;
         margin: 0;
     }
 
     .main-img {
-        height: 12rem;
+        height: 14rem;
     }
 
     .carousel-container .text-box {
@@ -187,7 +286,7 @@ h1 {
 
     .carousel-container .text-box h2 {
         font-size: 1rem;
-        margin-bottom: 1%;
+        margin: 2% 0;
     }
 
     .carousel-container .text-box p {
@@ -195,4 +294,98 @@ h1 {
         padding-bottom: 1%;
         margin: 0;
     }
+}
+
+@media screen and (max-width: 440px) {
+    .attraction-container {
+        height: 40rem;
+    }
+
+    .picture {
+        transform: translate(-250%, -50%);
+    }
+
+    #vic-falls.active, #devils-pool.active, #zambezi.active, #vic-falls-bridge.active {
+        padding: 20% 7%;
+    }
+
+    .main-img {
+        height: 13rem;
+    }
+
+    .carousel-container .text-box h2 {
+        margin: 5% 0;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .attraction-container {
+        height: 39.5rem;
+    }
+
+    #vic-falls.active, #devils-pool.active, #zambezi.active, #vic-falls-bridge.active {
+        padding: 20% 5%;
+    } 
+}
+
+@media screen and (max-width: 415px) {
+    .attraction-container {
+        height: 39rem;
+    } 
+}
+
+@media screen and (max-width: 400px) {
+    .attraction-container {
+        height: 35.5rem;
+    }
+
+    .main-img {
+        height: 12rem;
+    }
+
+    .picture {
+        transform: translate(-220%, -50%);
+    }
+
+    #vic-falls.active, #devils-pool.active, #zambezi.active, #vic-falls-bridge.active {
+        padding: 20% 6%;
+    } 
+}
+
+@media screen and (max-width: 380px) {
+    .attraction-container {
+        height: 31rem;
+    }
+
+    .main-img {
+        height: 11rem;
+    }
+
+    #vic-falls.active, #devils-pool.active, #zambezi.active, #vic-falls-bridge.active {
+        padding: 20% 8%;
+    } 
+}
+
+@media screen and (max-width: 360px) {
+    .attraction-container {
+        height: 30.5rem;
+    }
+
+    #vic-falls.active, #devils-pool.active, #zambezi.active, #vic-falls-bridge.active {
+        padding: 20% 6%;
+    } 
+}
+
+@media screen and (max-width: 344px) {
+    .attraction-container {
+        height: 37.5rem;
+    }
+
+    .picture {
+        transform: translate(-200%, 40%);
+    }
+
+    #vic-falls.active, #devils-pool.active, #zambezi.active, #vic-falls-bridge.active {
+        padding: 40% 4%;
+    } 
 }
