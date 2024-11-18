@@ -111,19 +111,9 @@ h2 {
     }
 }
 
-/* Standard Tablet */ 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .about-us, .why-choose div, .why-choose p {
         font-size: smaller;
-    }
-
-    .container {
-        margin: 0 1.5%;
-    }
-
-    .container p {
-        width: 50%;
-        margin: 0 1%;
     }
 
     .explore {
@@ -138,6 +128,18 @@ h2 {
         height: 8rem;
         padding: 1% 2%;
     }
+}
+
+/* Standard Tablet */ 
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 1.5%;
+    }
+
+    .container p {
+        width: 50%;
+        margin: 0 1%;
+    }    
 
     .overlay-box2 {
         transform: translate(-15%, 92%);
@@ -148,8 +150,7 @@ h2 {
     }
 }
 
-/* Standard Mobile */ 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
     .paragraph2 {
         display: none;
     }
@@ -189,5 +190,24 @@ h2 {
 
     .overlay-box4 {
         transform: translate(15%, -5%);
+    }
+}
+
+/* Standard Mobile */ 
+@media screen and (max-width: 440px) {
+    .why-choose div {
+        margin: 2% 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .why-choose div {
+        margin: 2.5% 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .paragraph1 {
+        font-size: 0.8rem;
     }
 }
