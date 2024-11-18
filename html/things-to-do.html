@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/global-styling.css">
+        <link rel="stylesheet" href="../css/things-to-do.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Homemade+Apple&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <title>Visit Victoria Falls | Things To Do</title>
+    </head>
+    <body>
+        <header>
+            <img class="header-logo" src="../images/1.png" alt="Visit Victoria Falls company logo.">
+            <h1 id="mobile-header" class="mobile">Visit Victoria Falls</h1>
+            <nav class="desktop" aria-label="Main navigation">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <span aria-current="page">Things To Do </span>  
+                <a href="./accommodation.html">Accommodation</a>
+                <a href="./plan-your-visit.html">Plan Your Visit</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+            <nav class="mobile" aria-label="Mobile navigation">
+                <div 
+                    class="burger-menu" 
+                    onclick="toggleMenu()" 
+                    aria-expanded="false" 
+                    aria-controls="mobile-menu" 
+                    aria-label="Open mobile navigation menu"
+                    role="button"
+                    tabindex="0"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="mobile-menu" class="menu-items" role="menu">
+                    <a href="./index.html" role="menuitem">Home</a>
+                    <a href="./about.html" role="menuitem">About</a>
+                    <span aria-current="page" role="menuitem">Things To Do </span>    
+                    <a href="./accommodation.html" role="menuitem">Accommodation</a>
+                    <a href="./plan-your-visit.html" role="menuitem">Plan Your Visit</a>
+                    <a href="./contact.html" role="menuitem">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <section class="attractions" aria-labelledby="attractions-title">
+            <div class="img-text">
+                <div>
+                    <h2 id="attractions-title">Breathtaking Sights Around Victoria Falls</h2>
+                    <p>Victoria Falls offers an unforgettable spectacle of nature, where the 
+                        mighty Zambezi River plunges over 100 meters into a gorge, creating 
+                        the largest sheet of falling water in the world.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="img-box">
+                    <div class="picture" id="attraction1">
+                        <div 
+                            onclick="redirectToLink1()" 
+                            id="overlay1" 
+                            role="button" 
+                            aria-label="Learn more about Victoria Falls" 
+                            tabindex="0">
+                            <h2>Victoria Falls<br>|</h2>
+                            <p>Show More</p>
+                        </div>
+                    </div>
+                    <div class="picture" id="attraction2">
+                        <div 
+                            onclick="redirectToLink1()" 
+                            id="overlay2" 
+                            role="button" 
+                            aria-label="Learn more about Devil's Pool" 
+                            tabindex="0">
+                            <h2>Devil's Pool<br>|</h2>
+                            <p>Show More</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="picture" id="attraction3">
+                        <div 
+                            onclick="redirectToLink1()" 
+                            id="overlay3" 
+                            role="button" 
+                            aria-label="Learn more about Zambezi National Park" 
+                            tabindex="0">
+                            <h2>Zambezi National Park<br>|</h2>
+                            <p>Show More</p>
+                        </div>
+                    </div>
+                    <div class="picture" id="attraction4">
+                        <div 
+                            onclick="redirectToLink1()" 
+                            id="overlay4" 
+                            role="button" 
+                            aria-label="Learn more about Victoria Falls Bridge" 
+                            tabindex="0">
+                            <h2>Victoria Falls Bridge<br>|</h2>
+                            <p>Show More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="activities" aria-labelledby="activities-title">
+            <div class="container">
+                <div class="img-text">
+                    <h2 id="activities-title">Thrilling Activities Around Victoria Falls</h2>
+                    <p>
+                        Victoria Falls is not only a visual marvel but also an adventure 
+                        playground for thrill-seekers and nature enthusiasts. From 
+                        adrenaline-pumping experiences to peaceful explorations, visitors 
+                        have a range of activities to choose from:
+                    </p>
+                </div>
+                <div class="activity-img-box">
+                    <div class="picture" id="activity1">
+                        <div 
+                            onclick="redirectToLink2()" 
+                            id="overlay5" 
+                            role="button" 
+                            aria-label="Learn more about Helicopter Flights" 
+                            tabindex="0">
+                            <h2>Helicopter<br>Flights<br>|</h2>
+                            <p>Show More</p>
+                        </div>
+                    </div>
+                    <div class="picture" id="activity2">
+                        <div 
+                            onclick="redirectToLink2()" 
+                            id="overlay6" 
+                            role="button" 
+                            aria-label="Learn more about Sunset River Cruises" 
+                            tabindex="0">
+                            <h2>Sunset River Cruises<br>|</h2>
+                            <p>Show More</p>
+                        </div>
+                    </div>
+                    <div class="picture" id="activity3">
+                        <div 
+                            onclick="redirectToLink2()" 
+                            id="overlay7" 
+                            role="button" 
+                            aria-label="Learn more about Guided Nature Walks" 
+                            tabindex="0">
+                            <h2>Guided Nature Walks<br>|</h2>
+                            <p>Show More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <img class="footer-logo" src="../images/4.png" alt="Visit Victoria Falls company logo.">
+                <img class="footer-logo2" src="../images/1.png" alt="Visit Victoria Falls company logo.">
+                <p>&copy; Visit Victoria Falls 2024</p>
+                <section aria-label="Social media links">
+                    <img src="../images/social-media1.png" alt="Whatsapp icon.">
+                    <img src="../images/social-media2.png" alt="X icon.">
+                    <img src="../images/social-media3.png" alt="Facebook icon.">
+                    <img src="../images/social-media4.png" alt="Instagram icon.">
+                    <img src="../images/social-media5.png" alt="LinkedIn icon.">
+                    <img src="../images/social-media6.png" alt="YoutTube icon.">
+                </section>
+                <a href="#" role="button" aria-label="Back to top" tabindex="0">
+                    <img id="back-to-top" src="../images/back-to-top.png" alt="Back-to-top icon.">
+                </a>
+            </div>
+        </footer>
+        <script src="../javascript/things-to-do.js"></script>
+        <script src="../javascript/mobile-menu.js"></script>
+    </body>
+</html>

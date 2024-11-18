@@ -1,0 +1,226 @@
+header {
+    width: 100%;
+}
+
+footer {
+    width: 98%;
+}
+
+body {
+    align-items: center;
+}
+
+.text-box a:hover {
+    font-size: larger;
+    color: navy;
+}
+
+#vic-falls-hotel, #elephant-hills-hotel, #stanley-hotel, .mobile-link {
+    display: none
+}
+
+.hotels-container, .carousel-container, .picture, .text-box, #vic-falls-hotel.active, 
+#elephant-hills-hotel.active, #stanley-hotel.active {
+    display: flex;
+}
+
+.hotels-container {
+    background-image: url(../images/white-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-container, .text-box {
+    align-items: center;
+}
+
+.carousel-container {
+    width: 55%;
+    height: 31rem;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding: 10% 0 1% 0;
+    margin-bottom: 1%;
+}
+
+.carousel-container h1 {
+    transform: translate(-140%, -1430%);
+}
+
+.picture, .text-box {
+    justify-content: center;
+}
+
+.picture {
+    width: 50%;
+    position: relative;
+    transform: translate(55%, 200%);
+}
+
+.main-img {
+    height: 13rem;
+    width: 55%;
+    margin-left: 5%;
+    transform: translateY(-45%);
+    box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.text-box, #vic-falls-hotel.active, #elephant-hills-hotel.active, #stanley-hotel.active {
+    flex-direction: column;
+}
+
+.text-box {
+    padding: 0 6%;
+    transform: translateY(-15%);
+}
+
+.text-box p, .text-box a {
+    text-align: justify;
+}
+
+#vic-falls-hotel.active, #elephant-hills-hotel.active, #stanley-hotel.active, iframe {
+    width: 100%;
+}
+
+#vic-falls-hotel.active, #elephant-hills-hotel.active, #stanley-hotel.active {
+    margin-top: 5%;
+    background-color: rgba(70,130,180, 0.5);
+}
+
+.prev, .next { 
+    cursor: pointer;
+    z-index: 1;
+    width: 20%;
+    margin: 0 8%;
+}
+
+.iframe-box {
+    padding: 0.5%;
+    width: 45%;
+    padding-bottom: 0.5%;
+    background-image: none;
+}
+
+iframe {
+    height: 100%;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+/* RESPONSIVENESS */
+
+/* Standard Desktop */ 
+@media screen and (max-width: 1440px) {
+    .main-img {
+        height: 15rem;
+    }
+
+    .carousel-container h1 {
+        transform: translate(-140%, -1540%);
+    }
+
+    .carousel-container {
+        height: 34rem;
+    }
+}
+
+/* Standard Laptop */ 
+@media screen and (max-width: 1280px) {
+    .main-img {
+        height: 13rem;
+    }
+
+    .carousel-container h1 {
+        transform: translate(-140%, -1440%);
+    }
+
+    .carousel-container {
+        height: 32rem;
+    }
+}
+
+/* Standard Tablet */ 
+@media screen and (max-width: 768px) {
+    .menu-items {
+        z-index: 2;
+    }
+    
+    .hotels-container {
+        height: 41rem;
+    }
+    
+    .iframe-box {
+        width: 55%;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        padding: 1%;
+        margin-top: 30%;
+    }
+    
+    #vic-falls-hotel.active, #elephant-hills-hotel.active, #stanley-hotel.active {
+        font-size: smaller;
+        align-items: center;
+        padding-bottom: 10%;
+    }
+
+    .img-box {
+        display: flex;
+        justify-content: center;
+        margin: 2% 0;
+    }
+
+    .carousel-container h1 {
+        transform: translateY(-200%);
+        z-index: 1;
+    }
+
+    .main-img {
+        transform: translate(-2%, -50%);
+        height: 10rem;
+        width: 100%;
+    }
+
+    .text-box {
+        transform: translateY(-25%);
+    }
+
+    .text-box h2 {
+        font-size: 1rem;
+    }
+
+    .picture {
+        width: 90%;
+        transform: translateY(-150%);
+    }
+}
+
+/* Standard Mobile */ 
+@media screen and (max-width: 480px) {
+    .iframe-box, .desktop-link {
+        display: none;
+    }
+
+    .carousel-container {
+        width: 100%;
+        margin-top: 50%;
+    }
+
+    .main-img {
+        height: 12rem;
+    }
+
+    .mobile-link {
+        display: flex;
+    }
+
+    .picture {
+        transform: translateY(-120%);
+    }
+}

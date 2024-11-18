@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/global-styling.css">
+        <link rel="stylesheet" href="../css/plan-your-visit.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Homemade+Apple&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <title>Visit Victoria Falls | Plan Your Visit</title>
+    </head>
+    <body>
+        <header>
+            <img class="header-logo" src="../images/1.png" alt="Visit Victoria Falls company logo.">
+            <h1 id="mobile-header" class="mobile">Visit Victoria Falls</h1>
+            <nav class="desktop" aria-label="Main navigation">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./things-to-do.html">Things To Do</a>  
+                <a href="./accommodation.html">Accommodation</a>
+                <span aria-current="page">Plan Your Visit</span>
+                <a href="./contact.html">Contact</a>
+            </nav>
+            <nav class="mobile" aria-label="Mobile navigation">
+                <div 
+                    class="burger-menu" 
+                    onclick="toggleMenu()" 
+                    aria-expanded="false" 
+                    aria-controls="mobile-menu" 
+                    aria-label="Open mobile navigation menu"
+                    role="button"
+                    tabindex="0"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="mobile-menu" class="menu-items" role="menu">
+                    <a href="./index.html" role="menuitem">Home</a>
+                    <a href="./about.html" role="menuitem">About</a>
+                    <a href="./things-to-do.html" role="menuitem">Things To Do</a>  
+                    <a href="./accommodation.html" role="menuitem">Accommodation</a>
+                    <span aria-current="page" role="menuitem">Plan Your Visit</span>
+                    <a href="./contact.html"role="menuitem">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <section class="how-to-get-there" aria-labelledby="how-to-get-there-title">
+            <h2 id="how-to-get-there-title">How To Get There</h2>
+            <div class="container">
+                <div>
+                    <h3>By Air</h3>
+                    <p>
+                        Victoria Falls is serviced by the Victoria Falls Airport (VFA), 
+                        located approximately 20 km from the Falls. Regular flights 
+                        connect to major cities in Southern Africa, including Johannesburg, 
+                        Harare, and Livingstone. Shuttle services and taxis are available 
+                        for transfer to hotels.
+                    </p>
+                </div>
+                <div>
+                    <h3>By Road</h3>
+                    <p>
+                        You can drive to Victoria Falls from neighboring countries such as 
+                        Zambia and Botswana. The Kazungula Border Post is the most common 
+                        entry point from Botswana. Ensure to have your necessary travel 
+                        documents ready, including visas, if required.
+                    </p>
+                </div>
+                <div>
+                    <h3>Travel Tips</h3>
+                    <p>
+                        When booking flights, consider seasonal fluctuations in prices. 
+                        Early bookings can often yield the best rates. For detailed flight 
+                        options, check travel sites like <a href="https://www.skyscanner.net" 
+                        target="_blank">Skyscanner</a> or <a href="https://www.kayak.de/?ispredir=true" 
+                        target="_blank">Kayak</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="getting-around" aria-labelledby="getting-around-title">
+            <div class="img-container">
+                <div class="title-box">
+                    <h2 id="getting-around-title">Getting Around</h2>
+                </div>
+                <div class="container">
+                    <div class="picture" id="combi">
+                        <div id="layer1">
+                            <h3>Local Transport</h3>
+                            <p>
+                                Once in Victoria Falls, transportation options include taxis, shuttle 
+                                services, and rental cars. Local taxis ("combis") 
+                                are available and are a cost-effective way to navigate the area.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="picture" id="walking">
+                        <div id="layer2">
+                            <h3>Walking</h3>
+                            <p>
+                                The town is pedestrian-friendly, and many attractions, including the 
+                                Victoria Falls Rainforest, are within walking distance. Walking is a 
+                                great way to experience local shops and eateries.
+                            </p>
+                        </div>
+                        </div>
+                    <div class="picture" id="tours">
+                        <div id="layer3">
+                            <h3>Guided Tours</h3>
+                            <p>
+                                For a deeper understanding of the region, consider booking guided tours. 
+                                Many operators offer full-day excursions that include wildlife safaris, 
+                                sunset cruises, and cultural experiences.
+                            </p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="best-time" aria-labelledby="best-time-title">
+            <h2 id="best-time-title">Best Time To Visit</h2>
+            <div class="text-box">
+                <div id="box1">
+                    <h3>Seasonal Overview</h3>
+                    <p>
+                        The best time to visit Victoria Falls is during the dry season, from May to 
+                        October. During this period, the weather is mild, and wildlife is easier to 
+                        spot. The Falls are spectacular year-round, but water levels vary.
+                    </p>
+                </div>
+                <div id="box2">
+                    <h3>High Water Season</h3>
+                    <p>
+                        From February to April, the Falls experience high water levels due to seasonal 
+                        rains, providing breathtaking views, but may reduce visibility due to mist.
+                    </p>
+                </div>
+                <div id="box3">
+                    <h3>Events and Activities</h3>
+                    <p>
+                        Consider timing your visit to coincide with local festivals or events, such as 
+                        the Victoria Falls Carnival in December, which offers a unique blend of culture 
+                        and entertainment.
+                    </p>
+                </div>
+                <div id="box4">
+                    <h3>Visitor Tips</h3>
+                    <p>
+                        Always check the weather forecast ahead of your visit. The Falls can be misty 
+                        during the rainy season, impacting visibility.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <img class="footer-logo" src="../images/4.png" alt="Visit Victoria Falls company logo.">
+                <img class="footer-logo2" src="../images/1.png" alt="Visit Victoria Falls company logo.">
+                <p>&copy; Visit Victoria Falls 2024</p>
+                <section aria-label="Social media links">
+                    <img src="../images/social-media1.png" alt="Whatsapp icon.">
+                    <img src="../images/social-media2.png" alt="X icon.">
+                    <img src="../images/social-media3.png" alt="Facebook icon.">
+                    <img src="../images/social-media4.png" alt="Instagram icon.">
+                    <img src="../images/social-media5.png" alt="LinkedIn icon.">
+                    <img src="../images/social-media6.png" alt="YoutTube icon.">
+                </section>
+                <a href="#" role="button" aria-label="Back to top" tabindex="0">
+                    <img id="back-to-top" src="../images/back-to-top.png" alt="Back-to-top icon.">
+                </a>
+            </div>
+        </footer>
+        <script src="../javascript/mobile-menu.js"></script>
+    </body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/global-styling.css">
+        <link rel="stylesheet" href="../css/contact.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Homemade+Apple&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <title>Visit Victoria Falls | Contact</title>
+    </head>
+    <body>
+        <header>
+            <img class="header-logo" src="../images/1.png" alt="Visit Victoria Falls company logo.">
+            <h1 id="mobile-header" class="mobile">Visit Victoria Falls</h1>
+            <nav class="desktop" aria-label="Main navigation">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./things-to-do.html">Things To Do</a>  
+                <a href="./accommodation.html">Accommodation</a>
+                <a href="./plan-your-visit.html">Plan Your Visit</a>
+                <span aria-current="page">Contact</span>
+            </nav>
+            <nav class="mobile" aria-label="Mobile navigation">
+                <div 
+                    class="burger-menu" 
+                    onclick="toggleMenu()" 
+                    aria-expanded="false" 
+                    aria-controls="mobile-menu" 
+                    aria-label="Open mobile navigation menu"
+                    role="button"
+                    tabindex="0"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="mobile-menu" class="menu-items" role="menu">
+                    <a href="./index.html" role="menuitem">Home</a>
+                    <a href="./about.html" role="menuitem">About</a>
+                    <a href="./things-to-do.html" role="menuitem">Things To Do</a>  
+                    <a href="./accommodation.html" role="menuitem">Accommodation</a>
+                    <a href="./plan-your-visit.html" role="menuitem">Plan Your Visit</a>
+                    <span aria-current="page" role="menuitem">Contact</span>
+                </div>
+            </nav>
+        </header>
+        <section class="contact-form">
+            <div class="img-container">
+                <div class="content-box">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="../images/location-icon.png" alt="Location icon.">
+                            <h4>Address</h4>
+                        </div>
+                        <p>21 Livingstone Way, <br> Victoria Falls <br>Zimbabwe</p>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <img src="../images/telephone-icon.png" alt="Telephone icon.">
+                            <h4>Call Us</h4>
+                        </div>
+                        <p>+263 111222333</p>
+                    </div>
+                    <div id="email-box" class="icon">
+                        <img src="../images/email-icon.png" alt="Email envelelope icon.">
+                        <h4>
+                            <a 
+                                href="mailto:contact@visitvictoriafalls.com?Subject=Customer&nbsp;Enquiry" 
+                                aria-label="Email us at contact@visitvictoriafalls.com"
+                            >Email Us</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="form-container" aria-labelledby="contact-form-heading">
+                <h2 id="contact-form-heading">Contact Us</h2>
+                <form id="contactForm">
+                    <div class="section" aria-labelledby="full-name-title">
+                        <label id="full-name-title" for="first-name">NAME</label>
+                        <div class="full-name">
+                            <input 
+                                type="text" 
+                                id="first-name" 
+                                name="first-name" 
+                                required placeholder="First Name" 
+                                aria-required="true" 
+                                aria-labelledby="first-name">
+                            <input 
+                                type="text" 
+                                id="last-name" 
+                                name="last-name" 
+                                required placeholder="Last Name" 
+                                aria-required="true" 
+                                aria-labelledby="last-name">
+                        </div>
+                    </div>
+                    <div class="section" aria-labelledby="email-address-title">
+                        <label id="email-address-title" for="email">EMAIL ADDRESS</label>
+                        <input 
+                            type="text" 
+                            id="email" 
+                            name="email" 
+                            required placeholder="eg. johndoe@email.com" 
+                            aria-required="true" 
+                            aria-labelledby="email-address-title">
+                    </div>
+                    <div class="section" aria-labelledby="phone-number-title">
+                        <label id="phone-number-title" for="phone">PHONE NUMBER</label>
+                        <input 
+                            type="text" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="eg. +49 123456789" 
+                            aria-labelledby="phone-number-title">
+                    </div>
+                    <div class="section" aria-labelledby="enquiry-subject-selection">
+                        <label id="enquiry-subject-selection" for="subject">SUBJECT</label>
+                        <select id="subject" name="subject" required aria-required="true">
+                            <option value="" disabled selected>Select A Subject</option>
+                            <option value="accommodation">Inquiry about Accommodation</option>
+                            <option value="booking">Booking Request</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div class="section" aria-labelledby="enquiry-message-title">
+                        <label id="enquiry-message-title" for="message">MESSAGE</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5" 
+                            required placeholder="Please provide detailed inquiries..."
+                            aria-required="true" 
+                            aria-labelledby="enquiry-message-title">
+                        </textarea>
+                    </div>
+                    <div class="section" aria-labelledby="contact-preference-title">
+                        <label id="contact-preference-title">PREFERRED CONTACT METHOD</label>
+                        <div id="preferred-contact">
+                            <div>
+                                <input type="checkbox" id="emailCheckbox" name="contactMethod" value="email">
+                                <label for="emailCheckbox">Email</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="phoneCheckbox" name="contactMethod" value="phone">
+                                <label for="phoneCheckbox">Phone</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="whatsappCheckbox" name="contactMethod" value="whatsapp">
+                                <label for="whatsappCheckbox">WhatsApp</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button onclick="confirmForm()" type="submit" aria-label="Send Message">Send Message</button>
+                    </div>
+                </form>
+                <p id="note">
+                    Your privacy is important to us. Your information will be kept confidential.
+                </p>
+            </div>
+        </section>
+        <section class="location" aria-labelledby="location-heading">
+            <h2 id="location-heading">Our Location</h2>
+            <div class="landmarks">
+                <h3>Nearby Landmarks</h3>
+                <ul>
+                    <li>Victoria Falls</li>
+                    <li>Victoria Falls Bridge</li>
+                    <li>Zambezi National Park</li>
+                </ul>
+            </div>
+            <div id="map" role="region" aria-label="Map showing location of Visit Victoria Falls office"></div>
+        </section>
+        <section class="additional" aria-labelledby="business-hours-heading">
+            <h2 id="business-hours-heading">Business Hours</h2>
+            <p>
+                Our operating hours are Mondays to Fridays from 9am to 5pm.<br><br>
+                Don't hesitate to contact us! Our dedicated team is here to help make your visit to Victoria Falls unforgettable.
+            </p>
+        </section>
+        <footer>
+            <div>
+                <img class="footer-logo" src="../images/5.png" alt="Visit Victoria Falls company logo.">
+                <img class="footer-logo2" src="../images/1.png" alt="Visit Victoria Falls company logo.">
+                <p>&copy; Visit Victoria Falls 2024</p>
+                <section aria-label="Social media links">
+                    <img src="../images/social-media1.png" alt="Whatsapp icon.">
+                    <img src="../images/social-media2.png" alt="X icon.">
+                    <img src="../images/social-media3.png" alt="Facebook icon.">
+                    <img src="../images/social-media4.png" alt="Instagram icon.">
+                    <img src="../images/social-media5.png" alt="LinkedIn icon.">
+                    <img src="../images/social-media6.png" alt="YoutTube icon.">
+                </section>
+                <a href="#" role="button" aria-label="Back to top" tabindex="0">
+                    <img id="back-to-top" src="../images/back-to-top.png" alt="Back-to-top icon.">
+                </a>
+            </div>
+        </footer>
+        <script 
+            src="../javascript/contact.js" 
+            defer>
+        </script>
+            <script 
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANMujDH0Z5muMOJhHHHi6C34oXeoza498&libraries=places&callback=initMap" 
+                async 
+                defer>
+            </script>
+        <script src="../javascript/mobile-menu.js"></script>
+    </body>
+</html>

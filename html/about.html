@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/global-styling.css">
+        <link rel="stylesheet" href="../css/about.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Homemade+Apple&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <title>Visit Victoria Falls | About Us</title>
+    </head>
+    <body>
+        <header>
+            <img class="header-logo" src="../images/1.png" alt="Visit Victoria Falls company logo.">
+            <h1 id="mobile-header" class="mobile">Visit Victoria Falls</h1>
+            <nav class="desktop" aria-label="Main navigation">
+                <a href="./index.html">Home</a>
+                <span aria-current="page">About</span>
+                <a href="./things-to-do.html">Things To Do</a>  
+                <a href="./accommodation.html">Accommodation</a>
+                <a href="./plan-your-visit.html">Plan Your Visit</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+            <nav class="mobile" aria-label="Mobile navigation">
+                <div 
+                    class="burger-menu" 
+                    onclick="toggleMenu()" 
+                    aria-expanded="false" 
+                    aria-controls="mobile-menu" 
+                    aria-label="Open mobile navigation menu"
+                    role="button"
+                    tabindex="0"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="mobile-menu" class="menu-items" role="menu">
+                    <a href="./index.html" role="menuitem">Home</a>
+                    <span aria-current="page" role="menuitem">About</span>
+                    <a href="./things-to-do.html"> role="menuitem"Things To Do</a>  
+                    <a href="./accommodation.html" role="menuitem">Accommodation</a>
+                    <a href="./plan-your-visit.html" role="menuitem">Plan Your Visit</a>
+                    <a href="./contact.html" role="menuitem">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <section class="about-us" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Us</h2>
+            <div class="container">
+                <p class="paragraph1">
+                    At <em>Visit Victoria Falls</em>, we are passionate about showcasing 
+                    the hidden gem of Victoria Falls, Zimbabwe. With a focus on curating
+                    immersive travel experiences, we offer expertly crafted packages that
+                    combine adventure, culture and luxury. Whether you seek exhilarating 
+                    activities like rafting and bungee jumping or a serene escape into the 
+                    natural beauty of the Falls, we ensure every detail of your trip is 
+                    meticulously planned. 
+                </p>
+                <p class="paragraph2">
+                    With over a decade experience in the tourism insdustry, our team is dedicated
+                    to providing tailored packages that meet your unique needs. We collaborate 
+                    with the best local guides and accommodation providers to give you an authentic, 
+                    unforgettable journey. Our mission is to deliver affordable yet exclusive 
+                    experiences, ensuring your visit to Victoria Falls is extraordinary as the 
+                    destination itself. 
+                </p>
+            </div>
+        </section>
+        <div class="explore">
+            <p>
+                "Explore with us and discover why Victoria Falls is more than just a destination -
+                it's an adventure of a lifetime." 
+            </p>
+        </div>
+        <section class="why-choose" aria-label="Why Choose Us?">
+            <div class="overlay-box1">
+                <h4>Local expertise:</h4>
+                <p>
+                    Our guides and planners are deeply famidivar with Victoria Falls, providing 
+                    insider knowledge for a richer experience.
+                </p>   
+            </div>
+            <div class="overlay-box2">
+                <h4>Custom Travel Packages:</h4>
+                <p>
+                    We tailor every trip to match your interests, whether it is wildlife, 
+                    adventure or a luxurious retreat.
+                </p>
+            </div>
+            <div class="overlay-box3">
+                <h4>Sustainability Commitment:</h4>
+                <p>
+                    We are committed to eco-friendly tourism, ensuring that your trip benefits 
+                    both you and the local environment.
+                </p>
+            </div>
+            <div class="overlay-box4">
+                <h4>Unmatched Adventure:</h4>
+                <p>
+                    From river rafting to walking with lions, we bring you face-to-face with the 
+                    wild side of Victoria Falls.
+                </p>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <img class="footer-logo" src="../images/1.png" alt="Visit Victoria Falls company logo.">
+                <p>&copy; Visit Victoria Falls 2024</p>
+                <section aria-label="Social media links">
+                    <img src="../images/social-media1.png" alt="Whatsapp icon.">
+                    <img src="../images/social-media2.png" alt="X icon.">
+                    <img src="../images/social-media3.png" alt="Facebook icon.">
+                    <img src="../images/social-media4.png" alt="Instagram icon.">
+                    <img src="../images/social-media5.png" alt="LinkedIn icon.">
+                    <img src="../images/social-media6.png" alt="YoutTube icon.">
+                </section>
+                <a href="#" role="button" aria-label="Back to top" tabindex="0">
+                    <img id="back-to-top" src="../images/back-to-top.png" alt="Back-to-top icon.">
+                </a>
+            </div>
+        </footer>
+        <script src="../javascript/mobile-menu.js"></script>
+    </body>
+</html>

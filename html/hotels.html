@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/global-styling.css">
+        <link rel="stylesheet" href="../css/hotels.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Homemade+Apple&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <title>Visit Victoria Falls | Hotels</title>
+    </head>
+    <body>
+        <header>
+            <img class="header-logo" src="../images/1.png" alt="Visit Victoria Falls company logo.">
+            <h1 id="mobile-header" class="mobile">Visit Victoria Falls</h1>
+            <nav class="desktop" aria-label="Main navigation">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./things-to-do.html">Things To Do</a>  
+                <a href="./accommodation.html" aria-current="page">Accommodation</a>
+                <a href="./plan-your-visit.html">Plan Your Visit</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+            <nav class="mobile" aria-label="Mobile navigation">
+                <div 
+                    class="burger-menu" 
+                    onclick="toggleMenu()" 
+                    aria-expanded="false" 
+                    aria-controls="mobile-menu" 
+                    aria-label="Open mobile navigation menu"
+                    role="button"
+                    tabindex="0"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="mobile-menu" class="menu-items" role="menu">
+                    <a href="./index.html" role="menuitem">Home</a>
+                    <a href="./about.html" role="menuitem">About</a>
+                    <a href="./things-to-do.html" role="menuitem">Things To Do</a>  
+                    <a href="./accommodation.html" aria-current="page" role="menuitem">Accommodation</a>
+                    <a href="./plan-your-visit.html" role="menuitem">Plan Your Visit</a>
+                    <a href="./contact.html" role="menuitem">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <div class="hotels-container" role="main">
+            <div class="carousel-container" aria-live="polite" aria-labelledby="hotels-label">
+                <h1 id="hotels-label">Hotels</h1>
+                <section class="carousel-item" id="vic-falls-hotel" aria-labelledby="vic-falls-hotel-label">
+                    <div class="img-box">
+                        <img class="main-img" src="../images/vic-falls-hotel.jpg" alt="The Victoria Falls Hotel.">
+                    </div>
+                    <div class="text-box">
+                        <h2 id="vic-falls-hotel-label">The Victoria Falls Hotel:<br>A Timeless Luxury Experience</h2>    
+                        <p>
+                            The Victoria Falls Hotel offers an exceptional blend of Edwardian charm 
+                            and modern luxury. Guests can choose from elegantly designed <strong>Standard Rooms
+                            </strong>, <strong>Deluxe Rooms</strong>, and luxurious <strong>Suites</strong>, 
+                            all featuring modern amenities like air conditioning, Wi-Fi, and room service.<br><br>
+                            <span class="desktop-link">
+                                Click <a class="desktop-link" href="https://www.victoriafallshotel.co/" 
+                                target="myIframe"><strong>here</strong></a> to view the hotel on the screen to your
+                                right. &rarr;
+                            </span>
+                            <span class="mobile-link">
+                                Click <a class="mobile-link" href="https://www.victoriafallshotel.co/" 
+                                target="_blank"><strong>&nbsp;here&nbsp;</strong></a> to view the hotel.
+                            </span>
+                        </p>
+                    </div>
+               </section>
+               <section class="carousel-item" id="elephant-hills-hotel" aria-labelledby="elephant-hills-hotel-label">
+                    <div class="img-box">
+                        <img 
+                            class="main-img" 
+                            src="../images/elephant-hills.jpg" 
+                            alt="Aerial view of the Elephant Hills Resort.">
+                    </div>
+                    <div class="text-box">
+                        <h2 id="elephant-hills-hotel-label">Elephant Hills Resort:<br>A Majestic Escape</h2>    
+                        <p>
+                            Elephant Hills Resort offers a luxurious retreat in close proximity to Victoria Falls, 
+                            combining modern amenities with timeless elegance. Guests can enjoy a variety of room 
+                            options, from <strong>standard</strong> to <strong>deluxe</strong> rooms and suites, 
+                            each equipped with air conditioning, Wi-Fi, and scenic views. <br><br>
+                            <span class="desktop-link">
+                                Click <a class="desktop-link" href="https://www.elephanthillshotel.com/" 
+                                target="myIframe"><strong>here</strong></a> to view the hotel on the screen to your
+                                right. &rarr;
+                            </span>
+                            <span class="mobile-link">
+                                Click <a class="mobile-link" href="https://www.elephanthillshotel.com/" 
+                                target="_blank"><strong>&nbsp;here&nbsp;</strong></a> to view the hotel.
+                            </span>
+                        </p>
+                    </div>
+               </section>
+               <section class="carousel-item" id="stanley-hotel" aria-labelledby="stanley-hotel-label">
+                    <div class="img-box">
+                        <img 
+                            class="main-img" 
+                            src="../images/stanley-hotel.jpg" 
+                            alt="Woman standing on her balcony at Stanley & Livingstone Boutique Hotel.">
+                    </div>
+                    <div class="text-box">
+                        <h2 id="stanley-hotel-label">Stanley & Livingstone Boutique Hotel:<br>A Luxurious Retreat</h2>    
+                        <p>
+                            The Stanley & Livingstone Boutique Hotel offers an exquisite stay just a short distance 
+                            from Victoria Falls. Guests can choose from elegantly appointed <strong>standard</strong> 
+                            rooms, <strong>deluxe</strong> rooms, and <strong>suites</strong>, each featuring modern 
+                            amenities like Wi-Fi, air conditioning, and scenic views. <br><br>
+                            <span class="desktop-link">
+                                Click <a class="desktop-link" href="https://www.more.co.za/stanleyandlivingstone/" 
+                                target="myIframe"><strong>here</strong></a> to view the hotel on the screen to your
+                                right. &rarr;
+                            </span>
+                            <span class="mobile-link">
+                                Click <a class="mobile-link" href="https://www.more.co.za/stanleyandlivingstone/" 
+                                target="_blank"><strong>&nbsp;here&nbsp;</strong></a> to view the hotel.
+                            </span>
+                        </p>
+                    </div>
+                </section>
+                <div class="picture">
+                    <img 
+                        class="prev" 
+                        src="../images/previous.png" 
+                        alt="Previous slide icon." 
+                        role="button" 
+                        aria-label="Previous slide">
+                    <img 
+                        class="next" 
+                        src="../images/next.png" 
+                        alt="Next slide icon." 
+                        role="button" 
+                        aria-label="Next slide">
+                </div>
+            </div>
+            <div class="iframe-box">
+                <iframe name="myIframe" src="about:blank" aria-label="Hotel information display"></iframe>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <img class="footer-logo" src="../images/1.png" alt="Visit Victoria Falls company logo.">
+                <p>&copy; Visit Victoria Falls 2024</p>
+                <section aria-label="Social media links">
+                    <img src="../images/social-media1.png" alt="Whatsapp icon.">
+                    <img src="../images/social-media2.png" alt="X icon.">
+                    <img src="../images/social-media3.png" alt="Facebook icon.">
+                    <img src="../images/social-media4.png" alt="Instagram icon.">
+                    <img src="../images/social-media5.png" alt="LinkedIn icon.">
+                    <img src="../images/social-media6.png" alt="YoutTube icon.">
+                </section>
+                <a href="#" role="button" aria-label="Back to top" tabindex="0">
+                    <img id="back-to-top" src="../images/back-to-top.png" alt="Back-to-top icon.">
+                </a>
+            </div>
+        </footer>
+        <script src="../javascript/accommodation-carousel.js"></script>
+        <script src="../javascript/mobile-menu.js"></script>
+    </body>
+</html>

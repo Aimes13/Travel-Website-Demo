@@ -1,0 +1,153 @@
+.quick-links a {
+    font-weight: bolder;
+    color: navy;
+}
+
+.quick-links a:visited {
+    color: #0E4D92;
+}
+
+.quick-links a:hover {
+    color: #0492C2;
+    font-size: larger;
+}
+
+body {
+    background-image: url(../images/white-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container, .featured, .featured div, .card, .quick-links div {
+    display: flex;
+}
+
+.home-container, .featured, .card {
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 0;
+}
+
+h4 {
+    margin-bottom: 2%;
+}
+
+.overview, .overview p, .quick-links, .card {
+    text-align: center;
+}
+
+.overview, .quick-links {
+    padding: 0 2% 2% 2%;
+    width: 80%;
+}
+
+.quick-links {
+    width: 60%;
+}
+
+.featured div, .quick-links div {
+    justify-content: space-between;
+}
+
+.quick-links div {
+    font-size: larger;
+    margin-top: 2%;
+}
+
+.featured {
+    padding: 1% 0 5% 0;
+    margin: 5% 0.5%;
+    background-color: rgba(72, 170, 173, 0.3);
+}
+
+.card {
+    background-color: white;
+    box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+    width: 25%;
+    margin: 2% 0.5% 0 0.5%;
+    padding: 1%;
+}
+
+.card img {
+    width: 100%;
+}
+
+#shift1, #shift2 {
+    transform: translateY(10%);
+}
+
+
+/* RESPONSIVENESS */
+
+/* Standard Laptop */ 
+@media screen and (max-width: 1280px) {
+    .quick-links {
+        width: 70%;
+    }
+}
+
+/* Standard Tablet */ 
+@media screen and (max-width: 768px) {
+    .featured {
+        width: 100%;
+    }
+    
+    .featured div {
+        flex-wrap: wrap;
+        padding: 0 1%;
+    }
+
+    .card {
+        width: 45%;
+        margin: 2% 1%;
+    }
+
+    #shift1, #shift2 {
+        transform: translateY(0);
+    }
+
+    .quick-links {
+        width: 90%;
+    }
+
+    .quick-links a {
+        font-size: smaller;
+    }
+}
+
+/* Standard Mobile */ 
+@media screen and (max-width: 480px) {
+    .overview, .featured, .quick-links {
+        font-size: smaller;
+    }
+
+    .featured div {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    .card {
+        width: 90%;
+        margin: 2% 0;
+        padding: 0 2%;
+    }
+
+    .quick-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quick-links div {
+        flex-wrap: wrap;
+        width: 70%;
+    }
+
+    .quick-links a {
+        margin: 2% 0;
+    }
+}
+  

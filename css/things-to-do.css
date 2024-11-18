@@ -1,0 +1,309 @@
+#overlay1, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6, #overlay7 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: none;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.attractions, .img-box, .img-text, .attractions .img-text div, .container, #attraction1:hover #overlay1, #attraction2:hover #overlay2, 
+#attraction3:hover #overlay3, #attraction4:hover #overlay4, #activity1:hover #overlay5, 
+#activity2:hover #overlay6, #activity3:hover #overlay7, .activities, .activity-img-box {
+    display: flex;
+}
+
+#overlay1, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6, #overlay7, .activities .container, 
+.footer-logo {
+    position: relative;
+}
+
+.attractions, .img-box, .img-text {
+    text-align: center;
+    padding: 2% 0.5%;    
+}
+
+.attractions, #attraction1, #attraction2, #attraction3, #attraction4,
+#activity1, #activity2, #activity3, .activities {
+    background-position: center;
+    background-size: cover;
+}
+
+.attractions {
+    background-image: url(../images/white-background.jpg);
+}
+
+.img-box {
+    margin: 0;
+    padding: 0;
+}
+
+.img-text {
+    width: 50%;
+    padding: 0.2% 0;
+    margin-right: 0.5%;
+}
+
+.img-text p, .picture p {
+    font-size: larger;
+}
+
+.container, .attractions .img-text div, #attraction1:hover #overlay1, #attraction2:hover #overlay2, #attraction3:hover #overlay3, 
+#attraction4:hover #overlay4, #activity1:hover #overlay5, #activity2:hover #overlay6,
+#activity3:hover #overlay7 {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.attractions .img-text div {
+    align-items: center;
+    background-color: rgba(70,130,180, 0.5);
+}
+
+.attractions .img-text div p {
+    padding: 0 10%;
+}
+
+.container {
+    width: 50%;
+}
+
+#attraction1, #attraction2, #attraction3, #attraction4,
+#activity1, #activity2, #activity3 {
+    background-image: url(../images/vic-falls.jpg);
+    width: 50%;
+    margin: 0.5%;
+    font-size: smaller;
+}
+
+#attraction1, #attraction2, #attraction3, #attraction4, #overlay1, #overlay2, #overlay3, 
+#overlay4, #overlay5, #overlay6, #overlay7 {
+    height: 10rem;
+}
+
+#attraction2 {
+    background-image: url(../images/devils-pool2.jpg);
+}
+
+#attraction3 {
+    background-image: url(../images/warthogs.jpg);
+}
+
+#attraction4 {
+    background-image: url(../images/vic-falls-bridge2.jpg);
+}
+
+.picture p {
+    font-weight: bolder;
+}
+
+.picture h2, .activities .container .img-text h2 {
+    margin-bottom: 0;
+}
+
+.activities {
+    justify-content: flex-end;
+    height: 35rem;
+    background-image: url(../images/backdrop-activities.jpg);
+}
+
+.activities .container {
+    transform: translate(-5%, 135%);
+    z-index: 1;
+    width: 55%;
+    height: fit-content;
+    padding: 3% 1%;
+    background-color: rgba(1, 96, 100, 0.9);
+}
+
+.container .img-text p {
+    padding: 0 3%;
+}
+
+.activity-img-box {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2%;
+}
+
+#activity1, #activity2, #activity3 {
+    margin: 0 1%;
+    box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+    background-image: url(../images/helicopters.jpg);
+}
+
+#activity1, #activity2, #activity3, #overlay5, #overlay6, #overlay7 {
+    height: 7rem;
+}
+
+#activity2 {
+    background-image: url(../images/sunset.jpg);
+}
+
+#activity3 {
+    background-image: url(../images/nature-walks.jpg);
+}
+
+.activities .container .img-text {
+    flex-direction: column;
+    width: 100%;
+    color: white;
+}
+
+#activity1:hover #overlay5, #activity2:hover #overlay6,
+#activity3:hover #overlay7 {
+    text-align: center;
+}
+
+footer {
+    margin-top: 35%;
+}
+
+.footer-logo {
+    transform: translateY(-80%);
+    height: 12rem;
+}
+
+footer div {
+    height: 4rem;
+    padding: 0.5% 0;
+}
+
+footer section {
+    margin-right: 5%;
+    width: 35%;
+}
+
+footer p {
+    margin-right: 12%;
+    width: 35%;
+}
+
+/* RESPONSIVENESS */
+
+/* Standard Desktop */
+@media screen and (max-width: 1440px) {
+    #attraction1, #attraction2, #attraction3, #attraction4, #overlay1, #overlay2, #overlay3, 
+    #overlay4 {
+        height: 12rem;
+    }
+
+    #activity1, #activity2, #activity3, #overlay5, #overlay6, #overlay7 {
+        height: 9rem;
+    }
+
+    .activities .container {
+        transform: translate(-5%, 130%);
+    }
+
+    footer {
+        margin-top: 33%;
+    }
+}
+
+/* Standard Laptop */
+@media screen and (max-width: 1280px) {
+    #attraction1, #attraction2, #attraction3, #attraction4, #overlay1, #overlay2, #overlay3, 
+    #overlay4 {
+        height: 11rem;
+    }
+
+    #activity1, #activity2, #activity3, #overlay5, #overlay6, #overlay7 {
+        height: 8rem;
+    }
+
+    footer {
+        margin-top: 37%;
+    }
+}
+
+/* Tablets */ 
+@media screen and (max-width: 768px) {
+    .img-text p {
+        font-size: smaller;
+    }
+
+    .img-text h2 {
+        font-size: 1.2rem;
+    }
+
+    #attraction1, #attraction2, #attraction3, #attraction4,
+    #overlay1, #overlay2, #overlay3, #overlay4 {
+        height: 6.5rem;
+        font-size: 0.7rem;
+    }
+
+    .activities {
+        height: 25rem;
+    }
+
+    .activities .container {
+        font-size: smaller;
+        width: 60%;
+        transform: translate(-5%, 162%);
+    }
+
+    #activity1, #activity2, #activity3, #overlay5, #overlay6, #overlay7 {
+        height: 5rem;
+        font-size: 0.5rem;
+    }
+
+    .footer-logo {
+        height: 6.5rem;
+        transform: translateY(-100%);
+    }
+
+    footer section {
+        margin-right: 5%;
+        width: 20%;
+    }
+
+    footer p {
+        margin-right: 12%;
+        width: 40%;
+    }
+}
+
+/* Mobile */ 
+@media screen and (max-width: 480px) {
+    .attractions {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+
+    .img-text, .container {
+        width: 95%;
+    }
+
+    .img-text div {
+        padding: 2%;
+    }
+
+    .activities {
+        height: 20rem;
+    }
+
+    .activities .container {
+        width: 90%;
+        transform: translate(-3%, 130%);
+    }
+
+    #activity1, #activity2, #activity3, #overlay5, #overlay6, #overlay7 {
+        height: 5rem;
+    }
+
+    footer {
+        margin-top: 60%;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    footer section {
+        margin-right: 0;
+        width: 25%;
+    }
+}

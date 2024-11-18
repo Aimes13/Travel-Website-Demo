@@ -1,0 +1,285 @@
+.img-box h2 {
+    text-align: left;
+}
+
+.container, .hotel-box, .lodge-box, .overview {
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    background-image: url(../images/white-background.jpg);
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 83%;
+    background-color: rgba(255, 255, 255,0.5); 
+    z-index: 1;
+}
+
+#overlay1, #overlay2  {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    display: none;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.img-box, .slider, #hotels:hover #overlay1,#lodges:hover #overlay2 {
+    display: flex;
+}
+
+.img-box, .slider, #overlay1, #overlay2, .overview div, .footer-logo {
+    position: relative;
+}
+
+.img-box {
+    flex-direction: column;
+    height: 15rem;
+    margin: 1% 1% 13%;
+    padding:2% 0 0 3%;
+    background-color: rgba(1, 96, 100, 0.5);
+    z-index: 1;
+}
+
+.img-box h2 {
+    font-size: 3rem;
+}
+
+.slider {
+    justify-content: space-around;
+    width: 70%;
+    padding: 1% 0;
+    z-index: 2;
+    transform: translate(35%, 10%);
+}
+
+.picture {
+    width: 50%;
+}
+
+.picture img {
+    width: 100%;   
+}
+
+.hotel-box, .lodge-box {
+    margin: 0.5% 3%;
+    box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+    background-image: url(../images/hotels.jpg);
+}
+
+.hotel-box, .lodge-box, #overlay1, #overlay2  {
+    height: 12rem;
+}
+
+.lodge-box {
+    background-image: url(../images/lodges.jpg);
+}
+
+#hotels:hover #overlay1, #lodges:hover #overlay2 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overview {
+    background-image: url(../images/backdrop-accommodation.jpg);
+    height: 35rem;
+    margin-bottom: 28%;
+}
+
+.overview div {
+    width: 45%;
+    padding: 2% 3%;
+    text-align: justify;
+    z-index: 1;
+    transform: translate(10%, 185%);
+    background-color: rgba(117, 124, 136, 0.7);
+}
+
+.footer-logo {
+    transform: translate(180%, -80%);
+    height: 12rem;
+}
+
+footer div {
+    height: 4rem;
+    padding: 0.5% 0;
+}
+
+footer section {
+    margin-right: 5%;
+    width: 20%;
+}
+
+footer p {
+    margin-right: 12%;
+}
+
+
+/* RESPONSIVENESS */
+
+/* Standard Desktop */ 
+@media screen and (max-width: 1440px) {
+    .container::before {
+        height: 67%;
+    }
+
+    .img-box {
+        height: 17rem;
+    }
+
+    .hotel-box, .lodge-box, #overlay1, #overlay2  {
+        height: 15rem;
+    }
+
+    .overview div {
+        width: 40%;
+    }
+}
+
+/* Standard Laptop */
+@media screen and (max-width: 1280px) {
+    .container::before {
+        height: 64%;
+    }
+    
+    .img-box {
+        height: 15rem;
+    }
+
+    .hotel-box, .lodge-box, #overlay1, #overlay2  {
+        height: 13rem;
+    }
+    
+    .overview {
+        height: 30rem;
+    }
+
+    .overview div {
+        width: 45%;
+        transform: translate(10%, 160%);
+    }
+
+    .footer-logo {
+        transform: translate(170%, -80%);
+    }
+
+    footer section {
+        margin-right: 5%;
+        width: 35%;
+    }
+
+    footer p {
+        width: 35%;
+    }
+}
+
+/* Standard Tablet */ 
+@media screen and (max-width: 768px) {
+    .menu-items {
+        z-index: 2;
+    }
+
+    .container::before {
+        height: 89.5%;
+    }
+    
+    .img-box h2 {
+        font-size: 2.5rem;
+    }
+
+    .img-box {
+        height: 12rem;
+        margin-bottom: 25%;
+    }
+
+    .slider {
+        width: 90%;
+        transform: translate(10%, 10%);
+    }
+
+    .hotel-box, .lodge-box, #overlay1, #overlay2 {
+        height: 10.5rem;
+    }
+
+    .overview {
+        height: 24rem;
+        margin-bottom: 40%;
+    }
+
+    .overview div {
+        width: 60%;
+        transform: translate(3%, 98%);
+    }
+
+    .footer-logo {
+        height: 6.5rem;
+        transform: translate(225%, -100%);
+    }
+
+    footer section {
+        margin-right: 5%;
+        width: 20%;
+    }
+
+    footer p {
+        margin-right: 10%;
+        width: 45%;
+    }
+    
+}
+
+/* Standard Mobile */ 
+@media screen and (max-width: 480px) {
+    .container::before {
+        height: 55%;
+    }
+    
+    .img-box h2 {
+        font-size: 1.8rem;
+    }
+
+    .img-box {
+        height: 8.5rem;
+        margin-bottom: 20%;
+    }
+
+    .slider {
+        transform: translate(0, 10%);
+        width: 100%;
+    }
+
+    .hotel-box, .lodge-box, #overlay1, #overlay2 {
+        height: 7rem;
+    }
+
+    #hotels h3, #lodges h3 {
+        font-size: 1.2rem;
+    }
+
+    .overview {
+        margin-bottom: 52%;
+    }
+
+    .overview div {
+        width: 85%;
+        font-size: smaller;
+        transform: translate(5%, 125%);
+    }
+    
+    .footer-logo {
+        display: none;
+    }
+
+    footer section {
+        margin-right: 0;
+        width: 25%;
+    }
+}

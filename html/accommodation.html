@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/global-styling.css">
+        <link rel="stylesheet" href="../css/accommodation.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Homemade+Apple&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <title>Visit Victoria Falls | Accommodation</title>
+    </head>
+    <body>
+        <header>
+            <img class="header-logo" src="../images/1.png" alt="Visit Victoria Falls company logo.">
+            <h1 id="mobile-header" class="mobile">Visit Victoria Falls</h1>
+            <nav class="desktop" aria-label="Main navigation">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./things-to-do.html">Things To Do</a>  
+                <span aria-current="page">Accommodation</span>
+                <a href="./plan-your-visit.html">Plan Your Visit</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+            <nav class="mobile" aria-label="Mobile navigation">
+                <div 
+                    class="burger-menu" 
+                    onclick="toggleMenu()" 
+                    aria-expanded="false" 
+                    aria-controls="mobile-menu" 
+                    aria-label="Open mobile navigation menu"
+                    role="button"
+                    tabindex="0"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="mobile-menu" class="menu-items" role="menu">
+                    <a href="./index.html" role="menuitem">Home</a>
+                    <a href="./about.html" role="menuitem">About</a>
+                    <a href="./things-to-do.html" role="menuitem">Things To Do</a>  
+                    <span aria-current="page" role="menuitem">Accommodation</span>
+                    <a href="./plan-your-visit.html" role="menuitem">Plan Your Visit</a>
+                    <a href="./contact.html" role="menuitem">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <section class="container" aria-labelledby="accommodation-section">
+            <div class="img-box">
+                <div>
+                    <h2 id="accommodation-section">Accommodation</h2>
+                </div>
+                <div class="slider">
+                    <div class="picture" id="hotels" role="group">
+                        <div class="hotel-box">
+                            <div 
+                                onclick="redirectToLink1()" 
+                                id="overlay1" 
+                                role="button" 
+                                tabindex="0" 
+                                aria-label="Show more about hotels"
+                            >
+                                <h3>Hotels<br>|</h3>
+                                <p>Show More</p>
+                            </div>
+                        </div>
+                        <h3>See Hotels</h3>
+                    </div>
+                    <div class="picture" id="lodges" role="group">
+                        <div class="lodge-box">
+                            <div 
+                                onclick="redirectToLink2()" 
+                                id="overlay2" 
+                                role="button" 
+                                tabindex="0" 
+                                aria-label="Show more about lodges"
+                            >
+                                <h3>Lodges<br>|</h3>
+                                <p>Show More</p>
+                            </div>
+                        </div>
+                        <h3>See Lodges</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="overview" aria-labelledby="overview-section">
+            <div>
+                <h2 id="overview-section">Overview of Accommodation in Victoria Falls</h2>
+                <p>
+                    The hotels and lodges near Victoria Falls provide a mix of luxury, convenience, 
+                    and unique experiences that make them stand out in the world of travel. 
+                    Located within minutes of one of the Seven Natural Wonders of the World, 
+                    these hotels offer guests not only breathtaking views but also easy access 
+                    to a variety of activities, including wildlife safaris, adventure sports, 
+                    and cultural experiences.
+                </p>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <img class="footer-logo" src="../images/5.png" alt="Visit Victoria Falls company logo.">
+                <img class="footer-logo2" src="../images/1.png" alt="Visit Victoria Falls company logo.">
+                <p>&copy; Visit Victoria Falls 2024</p>
+                <section aria-label="Social media links">
+                    <img src="../images/social-media1.png" alt="Whatsapp icon.">
+                    <img src="../images/social-media2.png" alt="X icon.">
+                    <img src="../images/social-media3.png" alt="Facebook icon.">
+                    <img src="../images/social-media4.png" alt="Instagram icon.">
+                    <img src="../images/social-media5.png" alt="LinkedIn icon.">
+                    <img src="../images/social-media6.png" alt="YoutTube icon.">
+                </section>
+                <a href="#" role="button" aria-label="Back to top" tabindex="0">
+                    <img id="back-to-top" src="../images/back-to-top.png" alt="Back-to-top icon.">
+                </a>
+            </div>
+        </footer>
+        <script src="../javascript/accommodation.js"></script>
+        <script src="../javascript/mobile-menu.js"></script>
+    </body>
+</html>

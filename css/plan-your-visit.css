@@ -1,0 +1,326 @@
+header {
+    width: 100%;
+}
+
+footer {
+    width: 98%;
+}
+
+.how-to-get-there h2 {
+    margin: 1% 0;
+}
+
+.how-to-get-there a:hover {
+    font-size: larger;
+}
+
+body {
+    align-items: center;
+}
+
+.how-to-get-there, .img-container, .img-container .container, .container, .getting-around, #layer1, 
+#layer2, #layer3, .best-time, .text-box, .text-box div {
+    display: flex;
+}
+
+.how-to-get-there, .img-container, .img-container .container, #layer1, #layer2, #layer3, .best-time,
+.text-box div {
+    flex-direction: column;
+}
+
+.how-to-get-there, .img-container, .img-container .container, .text-box div {
+    align-items: center;
+}
+
+.how-to-get-there, .img-container, #combi:hover, #walking:hover, #tours:hover, #box1, #box2, #box3, #box4 {
+    background-position: center;
+    background-size: cover;
+}
+
+.how-to-get-there {
+    padding-bottom: 2%;
+    height: 30rem;
+    background-image: url(../images/backdrop-airplane.jpg);
+}
+
+.container {
+    justify-content: space-around;
+}
+
+.container div, .picture {
+    margin: 0 1%;
+    width: 45%;
+    text-align: justify;
+    background-color: rgba(240, 248, 255, 0.2);
+    padding: 1% 2%;
+}
+
+.picture img, #overlay1 img, .getting-around {
+    width: 100%;
+}
+
+.getting-around {
+    justify-content: flex-end;
+    padding-bottom: 3%;
+}
+
+.title-box, .img-container .container, .best-time h2, #box1, #box2, #box3, #box4, .footer-logo {
+    position: relative;
+}
+
+.title-box {
+    transform: translate(-200%, 20%);
+    font-size: 1.5rem;
+}
+
+.img-container {
+    margin: 3% 1% 7%;
+    padding: 3% 0;
+    width: 60%;
+    height: auto;
+    background-image: url(../images/backdrop-tour.jpg);
+}
+
+.img-container .container {
+    width: 65%;
+    padding: 4% 1%;
+    height: auto;
+    transform: translate(-116%, 8%);
+    background-color: rgba(117, 147, 175, 0.9);
+}
+
+#combi, #walking, #tours {
+    width: 90%;
+    margin: 2% 0;
+    padding-top: 2%;
+    height: 13rem;
+    color: white;
+    background-color: rgba(0, 59, 110, 0.8);
+    box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+#combi p, #walking p, #tours p {
+    padding: 1%;
+}
+
+#layer1, #layer2, #layer3 {
+    width: auto;
+    height: 13rem;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+}
+
+#combi:hover, #walking:hover, #tours:hover {
+    background-image: url(../images/combi.jpg);
+    color: rgba(0, 0, 0, 0);
+}
+
+#walking:hover {
+    background-image: url(../images/walking.jpg);
+}
+
+#tours:hover {
+    background-image: url(../images/guided-tours.jpg);
+}
+
+.best-time {
+    align-items: flex-end;
+    text-align: justify;
+    margin: 0 1% 3% 1%;
+}
+
+.best-time h2 {
+    font-size: 2.5rem;
+    transform: translate(-60%, -110%);
+}
+
+.text-box {
+    width: 70%;
+    justify-content: space-between;
+}
+
+.text-box div {
+    width: 40%;
+    padding: 1% 2%;
+    margin: 0 1%;
+    font-size: smaller;
+}
+
+#box1, #box2, #box3, #box4 {
+    transform: translateY(5%);
+    background-image: url(../images/white-background.jpg);
+}
+
+#box2 {
+    transform: translateY(-8%);
+}
+
+#box3 {
+    transform: translateY(-2%);
+}
+
+#box4 {
+    transform: translateY(-20%);
+}
+
+.footer-logo {
+    transform: translate(-8%, -90%);
+    height: 10rem;
+}
+
+footer div {
+    height: 4rem;
+}
+
+footer section {
+    margin-right: 5%;
+    width: 35%;
+}
+
+footer p {
+    margin-right: 12%;
+    width: 35%;
+}
+
+
+/* RESPONSIVENESS */
+
+/* Standard Tablet */ 
+@media screen and (max-width: 768px) {
+    .how-to-get-there, .img-container .container, .text-box div {
+        font-size: smaller;
+    }
+
+    .how-to-get-there h2 {
+        margin: 2% 0;
+    }
+
+    .title-box {
+        font-size: 1.2rem;
+        transform: translate(-160%,40%);
+    }
+
+    .img-container .container {
+        width: 70%;
+        padding: 5% 1%;
+        transform: translate(-106%, 8%);
+    }
+
+    #combi, #walking, #tours, #layer1, #layer2, #layer3 {
+        height: 10rem;
+    }
+
+    #combi p, #walking p, #tours p {
+        font-size: 0.8rem;
+    }
+
+    .best-time h2 {
+        font-size: 2rem;
+        transform: translate(40%, -50%);
+    }
+
+    #box1, #box2, #box3, #box4 {
+        transform: translateY(0);
+    }
+
+    .best-time {
+        align-items: center;
+    }
+    
+    .text-box {
+        width: 80%;
+        padding: 0 3%;
+        flex-wrap: wrap;
+    }
+
+    .text-box div {
+        width: 35%;
+        margin: 2%;
+        padding: 3% 5%;
+    }
+
+    #box1, #box3 {
+        transform: translateY(8%);
+    }
+
+    footer {
+        margin-top: 3%;
+        margin-bottom: 0;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-logo2 {
+        display: block;
+        height: 4rem;
+        margin: 0.5% 2%;
+    }
+
+    footer section {
+        margin-right: 0;
+        width: 15%;
+    }
+
+    footer p {
+        margin-right: 0;
+        width: auto;
+    }    
+}
+
+/* Standard Mobile */ 
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .how-to-get-there {
+        height: 33rem;
+    }
+
+    .container div {
+        margin: 1%;
+        width: 80%;
+        background-color: rgba(240, 248, 255, 0.7);
+    }
+
+    .img-container {
+        background-image: none;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .title-box {
+        font-size: 1.2rem;
+        margin-bottom: 4%;
+        transform: translate(0);
+    }
+
+    .img-container .container {
+        width: 90%;
+        border-radius: 16px;
+        transform: translate(0);
+    }
+
+    .best-time h2 {
+        transform: translate(0);
+        margin-bottom: 2%;
+    }
+
+    .text-box {
+        width: 95%;
+        padding: 0 5%;
+    }
+
+    footer {
+        margin-top: 5%;
+    }
+
+    footer section {
+        width: 25%;
+    }
+}
