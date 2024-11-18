@@ -181,6 +181,21 @@ footer p {
 }
 
 /* RESPONSIVENESS */
+/* Drogon PC */
+@media screen and (max-width: 1940px) {
+    #attraction1, #attraction2, #attraction3, #attraction4, #overlay1, #overlay2, #overlay3, 
+    #overlay4, #overlay5, #overlay6, #overlay7 {
+    height: 13rem;
+    }
+
+    #activity1, #activity2, #activity3, #overlay5, #overlay6, #overlay7 {
+        height: 11rem;
+    }
+
+    .activities .container {
+        transform: translate(-5%, 120%);
+    }
+}
 
 /* Standard Desktop */
 @media screen and (max-width: 1440px) {
@@ -218,8 +233,28 @@ footer p {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    #attraction1, #attraction2, #attraction3, #attraction4, #overlay1, #overlay2, #overlay3, 
+    #overlay4 {
+        height: 9rem;
+    }
+
+    #activity1, #activity2, #activity3, #overlay5, #overlay6, #overlay7 {
+        height: 6rem;
+    }
+
+    footer {
+        margin-top: 40%;
+    }
+
+    .footer-logo {
+        height: 8.5rem;
+        transform: translateY(-100%);
+    }
+}
+
 /* Tablets */ 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 912px) {
     .img-text p {
         font-size: smaller;
     }
@@ -230,28 +265,40 @@ footer p {
 
     #attraction1, #attraction2, #attraction3, #attraction4,
     #overlay1, #overlay2, #overlay3, #overlay4 {
-        height: 6.5rem;
-        font-size: 0.7rem;
-    }
-
-    .activities {
-        height: 25rem;
+        height: 8rem;
     }
 
     .activities .container {
-        font-size: smaller;
         width: 60%;
-        transform: translate(-5%, 162%);
+        transform: translate(-5%, 195%);
     }
 
-    #activity1, #activity2, #activity3, #overlay5, #overlay6, #overlay7 {
-        height: 5rem;
-        font-size: 0.5rem;
+    footer {
+        margin-top: 35%;
     }
 
     .footer-logo {
         height: 6.5rem;
-        transform: translateY(-100%);
+    }
+}
+
+@media screen and (max-width: 860px) {
+    #attraction1, #attraction2, #attraction3, #attraction4,
+    #overlay1, #overlay2, #overlay3, #overlay4 {
+        height: 6.5rem;
+        font-size: 0.7rem;
+    }
+
+    #activity1, #activity2, #activity3, #overlay5, #overlay6, #overlay7 {
+        font-size: 0.5rem;
+    }
+
+    .activities .container {
+        transform: translate(-5%, 185%);
+    }
+
+    footer {
+        margin-top: 40%;
     }
 
     footer section {
@@ -265,8 +312,7 @@ footer p {
     }
 }
 
-/* Mobile */ 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
     .attractions {
         flex-direction: column;
         align-items: center;
@@ -287,11 +333,12 @@ footer p {
 
     .activities .container {
         width: 90%;
-        transform: translate(-3%, 130%);
+        transform: translate(-3%, 105%);
     }
 
-    #activity1, #activity2, #activity3, #overlay5, #overlay6, #overlay7 {
-        height: 5rem;
+    #attraction1, #attraction2, #attraction3, #attraction4,
+    #overlay1, #overlay2, #overlay3, #overlay4 {
+        height: 8rem;
     }
 
     footer {
@@ -305,5 +352,66 @@ footer p {
     footer section {
         margin-right: 0;
         width: 25%;
+    }
+}
+
+/* Mobile */ 
+@media screen and (max-width: 440px) {
+    #activity1, #activity2, #activity3, #overlay5, #overlay6, #overlay7 {
+        height: 4rem;
+        font-size: 0.35rem;
+    }
+
+    .activities .container {
+        transform: translate(-3%, 100%);
+    }
+
+    footer {
+        margin-top: 70%;
+    }
+
+    footer section {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #attraction1, #attraction2, #attraction3, #attraction4,
+    #overlay1, #overlay2, #overlay3, #overlay4 {
+        height: 7rem;
+    }
+
+    .activities .container {
+        transform: translate(-3%, 100%);
+    }
+
+    footer {
+        margin-top: 75%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #attraction1, #attraction2, #attraction3, #attraction4,
+    #overlay1, #overlay2, #overlay3, #overlay4 {
+        height: 6.5rem;
+    }
+
+    footer {
+        margin-top: 90%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #attraction1, #attraction2, #attraction3, #attraction4,
+    #overlay1, #overlay2, #overlay3, #overlay4 {
+        height: 6rem;
+    }
+
+    #activity1, #activity2, #activity3, #overlay5, #overlay6, #overlay7 {
+        height: 3.5rem;
+    }
+
+    footer {
+        margin-top: 90%;
     }
 }
