@@ -226,3 +226,13 @@ footer img {
         margin: 0.5% 2%;
     }
 }
+
+@media screen and (max-width: 400px) {
+    footer section {
+        width: 30%;
+    }
+
+    .footer-logo {
+        height: 3rem;
+    }
+}
