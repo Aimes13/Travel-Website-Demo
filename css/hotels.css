@@ -85,7 +85,6 @@ body {
 }
 
 #vic-falls-hotel.active, #elephant-hills-hotel.active, #stanley-hotel.active {
-    margin-top: 5%;
     background-color: rgba(70,130,180, 0.5);
 }
 
@@ -112,18 +111,43 @@ iframe {
 
 /* RESPONSIVENESS */
 
-/* Standard Desktop */ 
-@media screen and (max-width: 1440px) {
+/* Drogon PC */
+@media screen and (max-width: 1940px) {
     .main-img {
-        height: 15rem;
+        height: 17rem;
+        transform: translateY(-60%);
     }
 
     .carousel-container h1 {
-        transform: translate(-140%, -1540%);
+        transform: translate(-140%, -1630%);
     }
 
-    .carousel-container {
-        height: 34rem;
+    .text-box {
+        transform: translateY(-50%);
+    }
+
+    .picture {
+        transform: translate(55%, 130%);
+    }
+}
+
+/* Standard Desktop */ 
+@media screen and (max-width: 1440px) {
+    .main-img {
+        height: 14rem;
+        transform: translateY(-40%);
+    }
+
+    .carousel-container h1 {
+        transform: translate(-140%, -1420%);
+    }
+
+    .text-box {
+        transform: translateY(-20%);
+    }
+
+    .picture {
+        transform: translate(55%, 160%);
     }
 }
 
@@ -136,20 +160,40 @@ iframe {
     .carousel-container h1 {
         transform: translate(-140%, -1440%);
     }
+}
 
-    .carousel-container {
-        height: 32rem;
+@media screen and (max-width: 1024px) {
+    .main-img {
+        height: 10rem;
+        transform: translateY(-25%);
+    }
+
+    .carousel-container h1 {
+        transform: translate(-140%, -1330%);
+    }
+
+    .text-box h2 {
+        font-size: 1rem;
+    }
+
+    #vic-falls-hotel.active, #elephant-hills-hotel.active, #stanley-hotel.active {
+        font-size: smaller;
+        padding-bottom: 22%;
+    }
+
+    .text-box {
+        transform: translateY(20%);
     }
 }
 
 /* Standard Tablet */ 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
     .menu-items {
         z-index: 2;
     }
     
     .hotels-container {
-        height: 41rem;
+        height: 41.5rem;
     }
     
     .iframe-box {
@@ -162,12 +206,6 @@ iframe {
         width: 45%;
         padding: 1%;
         margin-top: 30%;
-    }
-    
-    #vic-falls-hotel.active, #elephant-hills-hotel.active, #stanley-hotel.active {
-        font-size: smaller;
-        align-items: center;
-        padding-bottom: 10%;
     }
 
     .img-box {
@@ -184,15 +222,11 @@ iframe {
     .main-img {
         transform: translate(-2%, -50%);
         height: 10rem;
-        width: 100%;
+        width: 85%;
     }
 
     .text-box {
         transform: translateY(-25%);
-    }
-
-    .text-box h2 {
-        font-size: 1rem;
     }
 
     .picture {
@@ -201,8 +235,30 @@ iframe {
     }
 }
 
+@media screen and (max-width: 860px) {
+    .main-img {
+        transform: translate(-2%, -50%);
+        height: 10rem;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .main-img {
+        height: 9rem;
+    }
+
+    .carousel-container h1 {
+        transform: translateY(-160%);
+    }
+
+    .text-box {
+        transform: translateY(-15%);
+    }
+}
+
 /* Standard Mobile */ 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
     .iframe-box, .desktop-link {
         display: none;
     }
@@ -212,8 +268,18 @@ iframe {
         margin-top: 50%;
     }
 
+    .carousel-container h1 {
+        transform: translateY(-180%);
+    }
+
     .main-img {
-        height: 12rem;
+        height: 13rem;
+        width: 80%;
+        transform: translate(-2%, -40%);
+    }
+
+    .text-box {
+        transform: translateY(-25%);
     }
 
     .mobile-link {
@@ -221,6 +287,45 @@ iframe {
     }
 
     .picture {
-        transform: translateY(-120%);
+        width: 70%;
+        transform: translateY(-180%);
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .carousel-container h1 {
+        transform: translateY(-180%);
+    }
+
+    .hotels-container {
+        height:40rem;
+    }
+
+    .main-img {
+        height: 10rem;
+    }
+
+    .text-box {
+        transform: translateY(-15%);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hotels-container {
+        height:39rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .hotels-container {
+        height:38rem;
+    }
+
+    .carousel-container h1 {
+        transform: translateY(-130%);
+    }
+
+    .main-img {
+        height: 9rem;
     }
 }
