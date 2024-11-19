@@ -235,14 +235,6 @@ iframe {
     }
 }
 
-@media screen and (max-width: 860px) {
-    .main-img {
-        transform: translate(-2%, -50%);
-        height: 10rem;
-        width: 85%;
-    }
-}
-
 @media screen and (max-width: 720px) {
     .main-img {
         height: 9rem;

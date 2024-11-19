@@ -109,18 +109,43 @@ iframe {
 
 /* RESPONSIVENESS */
 
-/* Standard Desktop */ 
-@media screen and (max-width: 1440px) {
+/* Drogon PC */
+@media screen and (max-width: 1940px) {
     .main-img {
-        height: 15rem;
+        height: 17rem;
+        transform: translateY(-60%);
     }
 
     .carousel-container h1 {
-        transform: translate(-140%, -1500%);
+        transform: translate(-140%, -1600%);
     }
 
-    .carousel-container {
-        height: 32rem;
+    .text-box {
+        transform: translateY(-50%);
+    }
+
+    .picture {
+        transform: translate(55%, 170%);
+    }
+}
+
+/* Standard Desktop */ 
+@media screen and (max-width: 1440px) {
+    .main-img {
+        height: 14rem;
+        transform: translateY(-40%);
+    }
+
+    .carousel-container h1 {
+        transform: translate(-140%, -1420%);
+    }
+
+    .text-box {
+        transform: translateY(-20%);
+    }
+
+    .picture {
+        transform: translate(55%, 160%);
     }
 }
 
@@ -131,22 +156,42 @@ iframe {
     }
 
     .carousel-container h1 {
-        transform: translate(-140%, -1420%);
+        transform: translate(-140%, -1390%);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-img {
+        height: 10rem;
+        transform: translateY(-25%);
     }
 
-    .carousel-container {
-        height: 31rem;
+    .carousel-container h1 {
+        transform: translate(-140%, -1260%);
+    }
+
+    .text-box h2 {
+        font-size: 1rem;
+    }
+
+    #elephant-camp.active, #vic-falls-safari.active, #ilala-lodge.active {
+        font-size: smaller;
+        padding-bottom: 21%;
+    }
+
+    .text-box {
+        transform: translateY(20%);
     }
 }
 
 /* Standard Tablet */ 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
     .menu-items {
         z-index: 2;
     }
-
+    
     .lodges-container {
-        height: 40rem;
+        height: 41.5rem;
     }
     
     .iframe-box {
@@ -160,12 +205,6 @@ iframe {
         padding: 1%;
         margin-top: 30%;
     }
-    
-    #elephant-camp.active, #vic-falls-safari.active, #ilala-lodge.active {
-        font-size: smaller;
-        align-items: center;
-        padding-bottom: 10%;
-    }
 
     .img-box {
         display: flex;
@@ -174,22 +213,18 @@ iframe {
     }
 
     .carousel-container h1 {
-        transform: translateY(-200%);
+        transform: translateY(-160%);
         z-index: 1;
     }
 
     .main-img {
         transform: translate(-2%, -50%);
-        height: 11rem;
-        width: 90%;
+        height: 10rem;
+        width: 85%;
     }
 
     .text-box {
         transform: translateY(-25%);
-    }
-
-    .text-box h2 {
-        font-size: 1rem;
     }
 
     .picture {
@@ -198,8 +233,22 @@ iframe {
     }
 }
 
+@media screen and (max-width: 720px) {
+    .main-img {
+        height: 9rem;
+    }
+
+    .carousel-container h1 {
+        transform: translateY(-160%);
+    }
+
+    .text-box {
+        transform: translateY(-15%);
+    }
+}
+
 /* Standard Mobile */ 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
     .iframe-box, .desktop-link {
         display: none;
     }
@@ -209,11 +258,64 @@ iframe {
         margin-top: 50%;
     }
 
+    .carousel-container h1 {
+        transform: translateY(-180%);
+    }
+
+    .main-img {
+        height: 13rem;
+        width: 80%;
+        transform: translate(-2%, -40%);
+    }
+
+    .text-box {
+        transform: translateY(-25%);
+    }
+
     .mobile-link {
         display: flex;
     }
 
     .picture {
+        width: 70%;
+        transform: translateY(-180%);
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .carousel-container h1 {
         transform: translateY(-120%);
+    }
+
+    .lodges-container {
+        height:40rem;
+    }
+
+    .main-img {
+        height: 10rem;
+    }
+
+    .text-box {
+        transform: translateY(-15%);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .lodges-container {
+        height:39rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .lodges-container {
+        height:38rem;
+    }
+
+    .carousel-container h1 {
+        transform: translateY(-130%);
+    }
+
+    .main-img {
+        height: 9rem;
     }
 }
