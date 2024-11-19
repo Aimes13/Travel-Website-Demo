@@ -232,7 +232,7 @@ footer img {
         width: 30%;
     }
 
-    .footer-logo {
+    .footer-logo, .footer-logo2 {
         height: 3rem;
     }
 }

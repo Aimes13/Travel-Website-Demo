@@ -125,10 +125,34 @@ footer p {
 
 /* RESPONSIVENESS */
 
+/* Drogon PC */
+@media screen and (max-width: 1940px) {
+    .hotel-box, .lodge-box, #overlay1, #overlay2  {
+        height: 17rem;
+    }
+
+    .container::before {
+        height: 68%;
+    }
+
+    .overview {
+        margin-bottom: 23%;
+    }
+
+    .overview div {
+        width: 30%;
+        transform: translate(35%, 170%);
+    }
+
+    .footer-logo {
+        transform: translate(250%, -80%);
+    }
+}
+
 /* Standard Desktop */ 
 @media screen and (max-width: 1440px) {
     .container::before {
-        height: 67%;
+        height: 68.5%;
     }
 
     .img-box {
@@ -139,17 +163,39 @@ footer p {
         height: 15rem;
     }
 
+    .overview {
+        margin-bottom: 28%;
+    }
+
     .overview div {
         width: 40%;
+    }
+
+    .overview div {
+        transform: translate(15%, 180%);
+    }
+
+    .footer-logo {
+        transform: translate(210%, -80%);
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .container::before {
+        height: 60%;
+    }
+
+    .overview div {
+        transform: translate(15%, 170%);
     }
 }
 
 /* Standard Laptop */
 @media screen and (max-width: 1280px) {
     .container::before {
-        height: 64%;
+        height: 61.5%;
     }
-    
+
     .img-box {
         height: 15rem;
     }
@@ -181,14 +227,42 @@ footer p {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .container::before {
+        height: 66%;
+    }
+
+    .img-box {
+        height: 12rem;
+    }
+
+    .hotel-box, .lodge-box, #overlay1, #overlay2  {
+        height: 10rem;
+    }
+
+    .overview {
+        margin-bottom: 40%;
+    }
+
+    .overview div {
+        width: 50%;
+        transform: translate(10%, 150%);
+    }
+
+    .footer-logo {
+        transform: translate(240%, -90%);
+        height: 8rem;
+    }
+}
+
 /* Standard Tablet */ 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
     .menu-items {
         z-index: 2;
     }
 
     .container::before {
-        height: 89.5%;
+        height: 70.5%;
     }
     
     .img-box h2 {
@@ -197,7 +271,7 @@ footer p {
 
     .img-box {
         height: 12rem;
-        margin-bottom: 25%;
+        margin-bottom: 20%;
     }
 
     .slider {
@@ -216,12 +290,12 @@ footer p {
 
     .overview div {
         width: 60%;
-        transform: translate(3%, 98%);
+        transform: translate(3%, 115%);
     }
 
     .footer-logo {
         height: 6.5rem;
-        transform: translate(225%, -100%);
+        transform: translate(260%, -100%);
     }
 
     footer section {
@@ -233,13 +307,50 @@ footer p {
         margin-right: 10%;
         width: 45%;
     }
-    
+}
+
+@media screen and (max-width: 820px) {
+    .container::before {
+        height: 69%;
+    }
+
+    .overview {
+        margin-bottom: 43%;
+    }
+
+    .overview div {
+        transform: translate(3%, 105%);
+    }
+
+    .footer-logo {
+        transform: translate(245%, -100%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container::before {
+        height: 39.5%;
+    }
+
+    .overview {
+        margin-bottom: 40%;
+    }
+
+    .overview div {
+        font-size: smaller;
+        width: 50%;
+        transform: translate(5%, 125%);
+    }
+
+    .footer-logo {
+        transform: translate(215%, -100%);
+    }
 }
 
 /* Standard Mobile */ 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
     .container::before {
-        height: 55%;
+        height: 40%;
     }
     
     .img-box h2 {
@@ -270,8 +381,7 @@ footer p {
 
     .overview div {
         width: 85%;
-        font-size: smaller;
-        transform: translate(5%, 125%);
+        transform: translate(5%, 145%);
     }
     
     .footer-logo {
@@ -281,5 +391,89 @@ footer p {
     footer section {
         margin-right: 0;
         width: 25%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .container::before {
+        height: 28%;
+    }
+    
+    .slider {
+        transform: translate(-1.5%, 10%);
+    }
+
+    .overview {
+        margin-bottom: 70%;
+    }
+
+    .overview div {
+        transform: translate(5%, 125%);
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .container::before {
+        height: 28%;
+    }
+
+    .img-box {
+        height: 8rem;
+    }
+
+    .hotel-box, .lodge-box, #overlay1, #overlay2 {
+        height: 6.5rem;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .container::before {
+        height: 27%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container::before {
+        height: 29%;
+    }
+
+    .overview {
+        margin-bottom: 75%;
+    }
+
+    .overview div {
+        transform: translate(5%, 110%);
+    }
+
+    footer section {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .container::before {
+        height: 34.5%;
+    }
+
+    .img-box {
+        margin-bottom: 25%;
+    }
+
+    .overview {
+        margin-bottom: 90%;
+    }
+
+    .overview div {
+        transform: translate(5%, 90%);
+    }
+
+    footer section {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container::before {
+        height: 28.5%;
     }
 }
