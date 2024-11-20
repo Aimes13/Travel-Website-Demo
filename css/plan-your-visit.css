@@ -187,8 +187,57 @@ footer p {
 
 /* RESPONSIVENESS */
 
+/* Drogon PC */
+@media screen and (max-width: 1940px) {
+    .container div {
+        width: 25%;
+    }
+
+    .title-box {
+        transform: translate(-300%, 20%);
+    }
+
+    #combi, #walking, #tours {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .container div {
+        width: 30%;
+    }
+
+    .title-box {
+        transform: translate(-230%, 20%);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .title-box {
+        transform: translate(-200%, 20%);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container div {
+        width: 35%;
+    }
+
+    .title-box {
+        transform: translate(-170%, 20%);
+    }
+
+    .best-time h2 {
+        font-size: 2rem;
+    }
+
+    .footer-logo {
+        height: 8.5rem;
+    }
+}
+
 /* Standard Tablet */ 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 912px) {
     .how-to-get-there, .img-container .container, .text-box div {
         font-size: smaller;
     }
@@ -199,7 +248,7 @@ footer p {
 
     .title-box {
         font-size: 1.2rem;
-        transform: translate(-160%,40%);
+        transform: translate(-180%,40%);
     }
 
     .img-container .container {
@@ -217,7 +266,6 @@ footer p {
     }
 
     .best-time h2 {
-        font-size: 2rem;
         transform: translate(40%, -50%);
     }
 
@@ -271,8 +319,33 @@ footer p {
     }    
 }
 
+@media screen and (max-width: 768px) {
+    .container div {
+        font-size: smaller;
+    }
+
+    .how-to-get-there {
+        height: 25rem;
+    }
+
+    .title-box {
+        transform: translate(-150%,40%);
+    }
+
+    #combi, #walking, #tours {
+        width: 85%;
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #combi p, #walking p, #tours p {
+        font-size: 0.7rem;
+    }
+}
+
 /* Standard Mobile */ 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
     .container {
         flex-direction: column;
         align-items: center;
@@ -283,7 +356,7 @@ footer p {
     }
 
     .container div {
-        margin: 1%;
+        margin: 2%;
         width: 80%;
         background-color: rgba(240, 248, 255, 0.7);
     }
@@ -306,6 +379,10 @@ footer p {
         transform: translate(0);
     }
 
+    #combi p, #walking p, #tours p, .container div {
+        font-size: 0.8rem;
+    }
+
     .best-time h2 {
         transform: translate(0);
         margin-bottom: 2%;
@@ -322,5 +399,33 @@ footer p {
 
     footer section {
         width: 25%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .how-to-get-there {
+        height: 36rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer section {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .how-to-get-there {
+        height: 37rem;
+    }
+
+    footer {
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .how-to-get-there {
+        height: 39rem;
     }
 }

@@ -466,10 +466,6 @@ footer p {
     .overview div {
         transform: translate(5%, 90%);
     }
-
-    footer section {
-        width: 35%;
-    }
 }
 
 @media screen and (max-width: 350px) {
