@@ -256,11 +256,22 @@ footer p {
 }
 
 /* Standard Tablet */ 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 912px) {
     .menu-items {
         z-index: 2;
     }
 
+    .overview div {
+        transform: translate(10%, 125%);
+    }
+
+    .footer-logo {
+        transform: translate(260%, -110%);
+        height: 6.5rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
     .container::before {
         height: 70.5%;
     }
@@ -291,11 +302,6 @@ footer p {
     .overview div {
         width: 60%;
         transform: translate(3%, 115%);
-    }
-
-    .footer-logo {
-        height: 6.5rem;
-        transform: translate(260%, -100%);
     }
 
     footer section {
@@ -344,6 +350,21 @@ footer p {
 
     .footer-logo {
         transform: translate(215%, -100%);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .overview div {
+        transform: translate(5%, 110%);
+    }
+
+    .footer-logo {
+        height: 5rem;
+        transform: translate(260%, -120%);
+    }
+
+    footer section {
+        width: 25%;
     }
 }
 
