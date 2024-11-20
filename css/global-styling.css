@@ -127,6 +127,12 @@ footer img {
 }
 
 /* Standard Tablet */ 
+@media screen and (max-width: 960px) {
+    .desktop {
+        width: 78%;
+    }
+}
+
 @media screen and (max-width: 912px) {
     .desktop {
         display: none;

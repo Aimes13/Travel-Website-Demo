@@ -313,6 +313,21 @@ footer p {
     }
 }
 
+@media screen and (max-width: 720px) {
+    .activities .container {
+        transform: translate(-5%, 180%);
+    }
+
+    footer {
+        margin-top: 42%;
+    }
+
+    .footer-logo {
+        height: 5.5rem;
+        transform: translateY(-110%);
+    }
+}
+
 @media screen and (max-width: 540px) {
     .attractions {
         flex-direction: column;

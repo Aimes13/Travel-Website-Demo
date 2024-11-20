@@ -180,9 +180,9 @@ footer p {
     }
 }
 
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1380px) {
     .container::before {
-        height: 60%;
+        height: 72%;
     }
 
     .overview div {
