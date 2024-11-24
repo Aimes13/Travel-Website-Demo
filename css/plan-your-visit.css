@@ -237,7 +237,7 @@ footer p {
 }
 
 /* Standard Tablet */ 
-@media screen and (max-width: 912px) {
+@media screen and (max-width: 932px) {
     .how-to-get-there, .img-container .container, .text-box div {
         font-size: smaller;
     }
@@ -319,6 +319,12 @@ footer p {
     }    
 }
 
+@media screen and (max-width: 844px) {
+    footer {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .container div {
         font-size: smaller;
@@ -341,6 +347,13 @@ footer p {
 @media screen and (max-width: 720px) {
     #combi p, #walking p, #tours p {
         font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .title-box {
+        font-size: 1.1rem;
+        transform: translate(-145%,40%);
     }
 }
 
